@@ -8,6 +8,15 @@ Structure.
 
 ## USER
 
+### USER DB
+
+- Avatar
+- Bio
+- Website
+- phone_number
+- gender
+- verified_badge
+
 ## Feeds(Photos)
 
 ## Comments
