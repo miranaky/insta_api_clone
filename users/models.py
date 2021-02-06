@@ -1,12 +1,23 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-# Create your models here.
-
 
 class User(AbstractUser):
 
-    """ Custom User Model """
+    """Custom User Model
+
+    Fields:
+    - avatar : user profile picture(One Image Field)
+    - bio : introduce user(Text Field)
+    - website : one URL link(Char Field limit 80 charactors)
+    - phone_number : one Phone number for connecting friend easily(Char Field limit 17 charactors)
+    - gender : gender(choices 4 types gender Male, Female, Other, Not to say)
+    - verified_badge : marked verified user(Boolean Field)
+
+    Connected :
+    - Feed
+
+    """
 
     GENDER_MALE = "male"
     GENDER_FEMALE = "female"

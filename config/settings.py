@@ -43,7 +43,11 @@ THRID_PARTY_APPS = [
 ]
 
 PROJECT_APPS = [
+    "core.apps.CoreConfig",
     "users.apps.UsersConfig",
+    "feeds.apps.FeedsConfig",
+    "follows.apps.FollowsConfig",
+    "comments.apps.CommentsConfig",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THRID_PARTY_APPS + PROJECT_APPS
